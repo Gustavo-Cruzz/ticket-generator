@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais legível */
+    background-color: #c2b7b7; 
+    background-image: url('images/back2.jpg');
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 11em;
+    margin:15em;
+    color: #333;
+}
+
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000em;
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    opacity: 0.9;
+}
+
+form {
+    width: 110%;
+    padding: 30px; 
+    border-right: 1px solid #eee; 
+}
+
+.form-group {
+    margin-bottom: 20px; /* Aumenta o espaçamento entre os grupos de formulário */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: 60%; 
+    padding: 10px;
+    border: 1px solid #0f0f0f;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+}
+
+.ticket {
+    width: 60%;
+    padding: 30px; /* Aumenta o padding */
+    border: none;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+.ticket h2 {
+    margin-bottom: 20px;
+    color: #007bff; /* Cor do título */
+}
+
+.ticket img {
+    width: 120px;
+     height: 120px;
+    border-radius: 50%; 
+    margin-bottom: 20px;
+}
+
+.ticket p {
+    margin-bottom: 10px;
+    font-size: 16px; 
+    text-align: center;
+}
+
+.error {
+    color: #d9534f;
+    display: block;
+    margin-top: 5px;
+    font-size: 14px; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    form, .ticket {
+        width: 100%;
+        padding: 20px;
+    form {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        }
+    }
+}
